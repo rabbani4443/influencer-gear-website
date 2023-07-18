@@ -1,40 +1,110 @@
 /* Start Shared common style */
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+}
 :root{
     --primary-color: #3A3A3A;
     --secondary-color:#18191F;
     --btn-color:#E02C6D;
-
-}
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
 }
 /* End Shared common style */
+
 /* Start Header style */
-.container{
+/* Start Navbar style */
+.nav-container{
     display: flex;
-    justify-content: space-around;
     align-items: center;
-    padding: 50px;
+    justify-content: space-around;
+    padding: 25px 0px;
 }
-.nav-title{
+.nav-title >h2{
     color: var(--primary-color);
-    font-size: 1.5rem;
+    font-size: 1.50rem;
     font-weight: 700;
 }
-.nav-list{
+.nav-item{
     display: flex;
 }
-.nav-item{
+.nav-list {
     list-style: none;
-    padding: 0px 30px;
+    padding-left: 50px;
 }
-.nav-item a{
+.nav-list a{
     text-decoration: none;
     color: var(--primary-color);
     font-size: 1rem;
     font-weight: 600;
 }
+.nav-icon{
+    color: var(--primary-color);
+    font-size: 1rem;
+    font-weight: 600;
+    padding-left: 50px;
+}
 
+/* End Navbar style */
 /* End Header style */
+
+
+
+/* Responsive Design */
+/* Small devices (landscape phones, 576px and down) */
+@media screen and (max-width:575.98px) {
+    .nav-container{
+        flex-direction: column;
+        white-space:nowrap;
+     }
+     .nav-title >h2{
+        font-size: 1.20rem;
+        padding: 15px 0px;
+    }
+     .nav-list{
+        padding-left: 10px;
+     }
+     .nav-list a{
+        font-size: 0.8rem;
+     }
+     .nav-icon{
+        padding-left: 10px;
+        font-size: 0.8rem;
+     }
+}
+
+/* Medium devices (tablets, 768px and down) */
+
+@media screen and (min-width:576px) and (max-width:767.98px) {
+    .nav-container{
+        white-space: nowrap;
+    }
+    .nav-title >h2{
+        font-size: 1.20rem;
+        font-weight: 600;
+    }
+    .nav-list{
+        padding-left: 15px;
+    }
+    .nav-icon{
+        padding-left: 15px;
+    }
+}
+
+/* Large devices (desktops, 992px and down) */
+
+@media screen and (min-width:768px) and (max-width:992px) {
+    .nav-container{
+        white-space: nowrap;
+    }
+    .nav-title >h2{
+        font-size: 1.20rem;
+    }
+    .nav-list{
+        padding-left: 25px;
+    }
+    .nav-icon{
+        padding-left: 25px;
+    }
+}
