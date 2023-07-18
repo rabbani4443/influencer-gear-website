@@ -10,6 +10,18 @@
     --primary-color: #3A3A3A;
     --secondary-color:#18191F;
     --btn-color:#E02C6D;
+    --border-color:#F1E4FF;
+}
+.primary-btn {
+    background-color: var(--btn-color);
+    padding: 10px 25px;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+}
+.primary-btn a{
+    text-decoration: none;
+    color: #fff;
 }
 /* End Shared common style */
 
@@ -45,15 +57,62 @@
     font-weight: 600;
     padding-left: 50px;
 }
-
 /* End Navbar style */
+/* Start Banner style */
+.banner-container{
+    padding: 80px 120px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 50px;
+}
+
+.banner-title{
+    color: var(--primary-color);
+    font-size: 3.10rem;
+    font-weight: 700;
+    line-height: 70px;
+}
+.banner-sub-title{
+    color: var(--primary-color);
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 15px 0px;
+}
+
+.banner-photo{
+    border: 2px solid var(--border-color);
+    border-radius: 50%;
+}
+.banner-photo img{
+    border-radius: 50%;
+}
+/* End Banner style */
 /* End Header style */
 
+/* Start min Style */
+main{
+    /* padding: 0px 100px 500px 100px; */
+}
+/* End min Style */
+/* Start sponsor style */
+.sponsor-container{
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 0px 100px 50px 100px;
+}
+/* End sponsor style */
 
 
 /* Responsive Design */
 /* Small devices (landscape phones, 576px and down) */
 @media screen and (max-width:575.98px) {
+    
+    /* Start Navbar style */
     .nav-container{
         flex-direction: column;
         white-space:nowrap;
@@ -72,11 +131,39 @@
         padding-left: 10px;
         font-size: 0.8rem;
      }
+     /* End Navbar style */
+    /* Start Banner style */
+    .banner-container{
+        flex-direction: column-reverse;
+        padding: 35px 25px;
+    }
+    .banner-description{
+        text-align: center;
+    }
+    .banner-title{
+        font-size: 2rem;
+        line-height: 50px;
+    }
+    .banner-photo img{
+        width: 100%;
+    }
+    /* End Banner style */
+    /* Start min Style */
+    /* Start sponsor style */
+    .sponsor-container{
+        padding: 0px 15px;
+        gap: 25px;
+    }
+    /* End sponsor style */
+    /* End min Style */
+
 }
 
 /* Medium devices (tablets, 768px and down) */
 
 @media screen and (min-width:576px) and (max-width:767.98px) {
+
+   /* Start Navbar style */
     .nav-container{
         white-space: nowrap;
     }
@@ -90,11 +177,50 @@
     .nav-icon{
         padding-left: 15px;
     }
+     /* End Navbar style */
+    /* Start Banner style */
+    .banner-container{
+        justify-content: space-between;
+        padding: 30px 25px;
+        gap: 25px;
+    }
+    .banner-description{
+        width: calc(55% - 30px);
+    }
+    .banner-title{
+        font-size: 2rem;
+        line-height: 50px;
+    }
+    .banner-sub-title{
+        font-size: 0.9rem;
+        line-height: 25px;
+        padding: 10px 0px;
+    }
+    .banner-photo{
+        width: calc(45% - 30px);
+    }
+    .banner-photo img{
+        width: 100%;
+    }
+    /* End Banner style */
+    /* Start min Style */
+    /* Start sponsor style */
+    .sponsor-container{
+        padding: 0px 25px;
+        gap: 25px;
+    }
+    .sponsor-container img{
+        width: 62px;
+    }
+    /* End sponsor style */
+    /* End min Style */
+    
 }
 
 /* Large devices (desktops, 992px and down) */
 
 @media screen and (min-width:768px) and (max-width:992px) {
+   /* Start Navbar style */
     .nav-container{
         white-space: nowrap;
     }
@@ -107,4 +233,41 @@
     .nav-icon{
         padding-left: 25px;
     }
+     /* End Navbar style */
+    /* Start Banner style */
+    .banner-container{
+        padding: 30px 25px;
+        gap: 25px;
+    }
+    .banner-description{
+        width: calc(55% - 30px);
+    }
+    .banner-title{
+        font-size: 2rem;
+        line-height: 50px;
+    }
+    .banner-sub-title{
+        font-size: 0.9rem;
+        line-height: 25px;
+        padding: 10px 0px;
+    }
+    .banner-photo{
+        width: calc(45% - 30px);
+    }
+    .banner-photo img{
+        width: 100%;
+    }
+    /* End Banner style */
+    /* Start min Style */
+    /* Start sponsor style */
+    .sponsor-container{
+        padding: 0px 50px;
+        gap: 25px;
+    }
+    .sponsor-container img{
+        width: 80px;
+    }
+    /* End sponsor style */
+    /* End min Style */
+    
 }
