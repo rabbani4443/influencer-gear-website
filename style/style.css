@@ -98,7 +98,7 @@ main{
 }
 /* Start sponsor style */
 .sponsor{
-    padding-bottom: 70px;
+    padding-bottom: 50px;
 }
 .sponsor-container{
     margin: auto;
@@ -200,12 +200,18 @@ main{
     }
     /* End Banner style */
     /* Start min Style */
+    main{
+        width: 90%;
+    }
     /* Start sponsor style */
     .sponsor-container{
         gap: 25px;
     }
     /* End sponsor style */
     /* Start Popular Collection Style */
+    .collection-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
 
     /* End Popular Collection Style */
      /* End min Style */
@@ -257,6 +263,9 @@ main{
     }
     /* End Banner style */
     /* Start min Style */
+    main{
+        width: 90%;
+    }
     /* Start sponsor style */
     .sponsor-container{
         gap: 25px;
@@ -266,7 +275,12 @@ main{
     }
     /* End sponsor style */
     /* Start Popular Collection Style */
-
+    .collection-container{
+        gap: 15px;
+    }
+    .collection-box{
+        padding: 12px;
+    }
     /* End Popular Collection Style */
     /* End min Style */
     
@@ -314,12 +328,15 @@ main{
     }
     /* End Banner style */
     /* Start min Style */
-    /* Start sponsor style */
-    .sponsor-container{
-        gap: 25px;
+    main{
+        width: 90%;
     }
-    .sponsor-container img{
-        width: 65px;
+    /* Start sponsor style */
+    .collection-container{
+        gap: 15px;
+    }
+    .collection-box{
+        padding: 12px;
     }
     /* End sponsor style */
     /* Start Popular Collection Style */
