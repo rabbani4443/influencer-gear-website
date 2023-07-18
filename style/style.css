@@ -81,7 +81,7 @@
 }
 
 .banner-photo{
-    border: 2px solid var(--border-color);
+    border: 1px solid var(--border-color);
     border-radius: 50%;
 }
 .banner-photo img{
@@ -92,10 +92,14 @@
 
 /* Start min Style */
 main{
-    /* padding: 0px 100px 500px 100px; */
+    width: 75%;
+    margin: auto;
+    padding-bottom: 300px;
 }
-/* End min Style */
 /* Start sponsor style */
+.sponsor{
+    padding-bottom: 70px;
+}
 .sponsor-container{
     margin: auto;
     display: flex;
@@ -103,9 +107,56 @@ main{
     justify-content: center;
     align-items: center;
     gap: 50px;
-    padding: 0px 100px 50px 100px;
+    padding: 25px 0;
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
 }
 /* End sponsor style */
+/* Start Popular Collection Style */
+.popular-collection h2{
+    color: var(--primary-color);
+    font-size: 1.7rem;
+    font-weight: 600;
+    line-height: 70px;
+    text-align: center;
+    padding-bottom: 50px;
+}
+.collection-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+.collection-box{
+   box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+   padding: 15px;
+   border-radius: 5px;
+}
+.collection-box img {
+    width: 100%;
+}
+.collection-box h3{
+    color: var(--secondary-color);
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 40px;
+    padding-top: 5px;
+}
+.collection-box h4{
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 1.50rem;
+    font-weight: 400;
+    line-height: 150%;
+    padding-bottom: 5px;
+}
+.collection-box p{
+    color: #787885;
+    font-size: 0.85rem;
+    font-weight: 400;
+    line-height: 143%;
+    letter-spacing: 0.252px;
+}
+/* End Popular Collection Style */
+/* End min Style */
 
 
 /* Responsive Design */
@@ -151,11 +202,13 @@ main{
     /* Start min Style */
     /* Start sponsor style */
     .sponsor-container{
-        padding: 0px 15px;
         gap: 25px;
     }
     /* End sponsor style */
-    /* End min Style */
+    /* Start Popular Collection Style */
+
+    /* End Popular Collection Style */
+     /* End min Style */
 
 }
 
@@ -206,13 +259,15 @@ main{
     /* Start min Style */
     /* Start sponsor style */
     .sponsor-container{
-        padding: 0px 25px;
         gap: 25px;
     }
     .sponsor-container img{
-        width: 62px;
+        width: 50px;
     }
     /* End sponsor style */
+    /* Start Popular Collection Style */
+
+    /* End Popular Collection Style */
     /* End min Style */
     
 }
@@ -261,13 +316,15 @@ main{
     /* Start min Style */
     /* Start sponsor style */
     .sponsor-container{
-        padding: 0px 50px;
         gap: 25px;
     }
     .sponsor-container img{
-        width: 80px;
+        width: 65px;
     }
     /* End sponsor style */
+    /* Start Popular Collection Style */
+
+    /* End Popular Collection Style */
     /* End min Style */
     
 }
