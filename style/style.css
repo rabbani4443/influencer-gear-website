@@ -68,6 +68,9 @@
     justify-content: space-around;
     align-items: center;
     gap: 50px;
+    /* background-image: url("../asset/images/Circle\ design.svg");
+    background-repeat: no-repeat;
+    background-position: right bottom; */
 }
 
 .banner-title{
@@ -86,6 +89,9 @@
 .banner-photo{
     border: 1px solid var(--border-color);
     border-radius: 50%;
+    /* background-image: url("../asset/images/Circle\ design.svg");
+    background-repeat: no-repeat;
+    background-position: right bottom; */
 }
 .banner-photo img{
     border-radius: 50%;
@@ -97,7 +103,7 @@
 main{
     width: 75%;
     margin: auto;
-    padding-bottom: 300px;
+    padding-bottom: 50px;
 }
 /* Start sponsor style */
 .sponsor{
@@ -187,6 +193,38 @@ main{
 }
 /* Start Featured  Style */
 /* End main Style */
+/* Start Footer Style */
+.footer{
+    background-color: #0A0826;
+    padding: 50px 0px;
+    text-align: center;
+    color: #fff;
+}
+.footer h2{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.footer p{
+    font-size: 0.8rem;
+    font-weight: 700;
+    line-height: 24px;
+    padding-top: 5px;
+}
+.footer-icon{
+    text-decoration: none;
+    font-size: 0.8rem;
+    margin-left: 10px;
+}
+.footer-icon i{
+    text-decoration: none;
+    color: #fff;
+    padding: 8px;
+    background-color: rgb(75 74 74 / 31%);
+    border-radius: 50%;
+    text-align: center;
+    margin-top: 10px;
+}
+/* End Footer Style */
 
 
 /* Responsive Design */
@@ -256,6 +294,9 @@ main{
     }
     /* Start Featured  Style */
      /* End main Style */
+    /* Start Footer Style */
+    
+    /* End Footer Style */
 
 }
 
@@ -354,6 +395,9 @@ main{
     }
     /* Start Featured  Style */
     /* End main Style */
+    /* Start Footer Style */
+    
+    /* End Footer Style */
     
 }
 
@@ -449,5 +493,8 @@ main{
     }
     /* Start Featured  Style */
     /* End main Style */
+    /* Start Footer Style */
+
+    /* End Footer Style */
     
 }
