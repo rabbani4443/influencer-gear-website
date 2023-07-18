@@ -70,7 +70,8 @@
     gap: 50px;
     /* background-image: url("../asset/images/Circle\ design.svg");
     background-repeat: no-repeat;
-    background-position: right bottom; */
+    background-position: right bottom;
+    background-size: contain; */
 }
 
 .banner-title{
@@ -87,11 +88,12 @@
 }
 
 .banner-photo{
-    border: 1px solid var(--border-color);
+    /* border: 1px solid var(--border-color); */
     border-radius: 50%;
-    /* background-image: url("../asset/images/Circle\ design.svg");
+    background-image: url("../asset/images/Circle\ design.svg");
     background-repeat: no-repeat;
-    background-position: right bottom; */
+    background-position: unset;
+    background-size: contain;
 }
 .banner-photo img{
     border-radius: 50%;
